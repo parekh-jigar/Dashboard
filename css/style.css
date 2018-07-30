@@ -1,0 +1,16 @@
+/* CSS style sheet*/
+
+#main-wrapper{
+	width: 500px;
+	margin: 0 auto;
+	background: black;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid #c0392b;
+}
+
+
+.myform{
+	width: 450px;
+	margin: 0 auto;
+}
