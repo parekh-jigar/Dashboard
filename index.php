@@ -13,10 +13,11 @@
 
 </head>
 
-<body style="background-color:#2980b9">
+<body style="background-color:#95a5a6">
 		<div id="main-wrapper">
 			<center>
 				<h2>Login Form</h2>	
+				<img src="images/avatar.png" class="avatar"/>
 			</center>
 
 			<form class="myform" action="index.php" method="post">
