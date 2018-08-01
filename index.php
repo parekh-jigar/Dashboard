@@ -21,13 +21,13 @@
 			</center>
 
 			<form class="myform" action="index.php" method="post">
-			<label>Username: </label><br>
-			<input type="text" class="inputvalues" placeholder="Type your username"/><br>
-			<label>Password: </label><br>
-			<input type="password" class="inputvalues" placeholder="Type your password"/><br>
-			<input type="submit" id="login_btn" value="Login"/><br>
-			<input type="button" id="register_btn" value="Register"/>
-		</form>
+				<label>Username: </label><br>
+				<input type="text" class="inputvalues" placeholder="Type your username"/><br>
+				<label>Password: </label><br>
+				<input type="password" class="inputvalues" placeholder="Type your password"/><br>
+				<input type="submit" id="login_btn" value="Login"/><br>
+				<input type="button" id="register_btn" value="Register"/>
+			</form>
 
 		</div>
 </body>
