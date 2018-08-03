@@ -34,7 +34,17 @@
 			<?php
 				if(isset($_POST['submit_btn']))
 				{
-					echo '<script type="text/javascript"> alert("Sign up button clicked") </script>';
+					//echo '<script type="text/javascript"> alert("Sign up button clicked") </script>';
+
+					$username = $_POST['username'];
+					$password = $_POST['password'];
+					$cpassword = $_POST['cpassword'];
+
+					if($password==$cpassword)
+					{
+						$query= "select * from user WHERE username='$username'";
+						$query_run = mysqli_query($con,$query);
+					}
 				}
 
 			?>
