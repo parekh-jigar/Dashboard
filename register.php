@@ -31,6 +31,14 @@
 				<input type="button" id="back_btn" value="Back"/>
 			</form>
 
+			<?php
+				if(isset($_POST['submit_btn']))
+				{
+					echo '<script type="text/javascript"> alert("Sign up button clicked") </script>';
+				}
+
+			?>
+
 		</div>
 </body>
 
