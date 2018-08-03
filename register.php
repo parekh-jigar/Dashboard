@@ -1,5 +1,5 @@
 <?php
-
+	require 'dbconfig/config.php'
 ?>
 
 <!DOCTYPE html>
@@ -22,12 +22,12 @@
 
 			<form class="myform" action="register.php" method="post">
 				<label>Username: </label><br>
-				<input type="text" class="inputvalues" placeholder="Type your username"/><br>
+				<input name="username" type="text" class="inputvalues" placeholder="Type your username" required/><br>
 				<label>Password: </label><br>
-				<input type="password" class="inputvalues" placeholder="Type your password"/><br>
+				<input name="password" type="password" class="inputvalues" placeholder="Type your password" required/><br>
 				<label>Confirm Password: </label><br>
-				<input type="password" class="inputvalues" placeholder="Confirm password"/><br>
-				<input type="submit" id="signup_btn" value="Sign Up"/><br>
+				<input name="cpassword"type="password" class="inputvalues" placeholder="Confirm password" required /><br>
+				<input name="submit_btn" type="submit" id="signup_btn" value="Sign Up"/><br>
 				<input type="button" id="back_btn" value="Back"/>
 			</form>
 
