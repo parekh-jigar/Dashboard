@@ -26,7 +26,7 @@
 				<label>Password: </label><br>
 				<input type="password" class="inputvalues" placeholder="Type your password"/><br>
 				<input type="submit" id="login_btn" value="Login"/><br>
-				<input type="button" id="register_btn" value="Register"/>
+				<a href= "register.php"><input type="button" id="register_btn" value="Register"/></a>
 			</form>
 
 		</div>
