@@ -28,7 +28,7 @@
 				<label>Confirm Password: </label><br>
 				<input name="cpassword"type="password" class="inputvalues" placeholder="Confirm password" required /><br>
 				<input name="submit_btn" type="submit" id="signup_btn" value="Sign Up"/><br>
-				<input type="button" id="back_btn" value="Back"/>
+				<a href= "index.php"><input type="button" id="back_btn" value="Back"/></a>
 			</form>
 
 			<?php
@@ -50,6 +50,7 @@
 							// There is already a user with the same username
 							echo '<script type="text/javascript"> alert("Username already exists, try another username") </script>';
 						}
+						else
 						{
 							$query= "insert into user values('$username','$password')";
 							$query_run= mysqli_query($con,$query);
