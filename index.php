@@ -13,7 +13,7 @@
 
 </head>
 
-<body style="background-color:#95a5a6">
+<body style="background-color:#ecf0f1">
 		<div id="main-wrapper">
 			<center>
 				<h2>Login Form</h2>	
