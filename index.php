@@ -35,13 +35,14 @@
 				$username= $_POST['username'];
 				$password= $_POST['passowrd'];
 
-				$query= "select * from user WHERE username='$username' AND password='$password'";
+				$query= "SELECT * FROM user WHERE username='$username' AND password='$password'";
 
 				$query_run = mysqli_query($con, $query);
 
 				if(mysqli_num_rows($query_run)>0)
 				{
 					// Valid
+					echo '<script type="text/javascript"> alert("User found") </script>';
 					$_SESSION['username']= $username;
 					header('location:homepage.php');
 
