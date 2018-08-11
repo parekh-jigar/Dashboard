@@ -33,7 +33,7 @@
 			if(isset($_POST['login']))
 			{
 				$username= $_POST['username'];
-				$password= $_POST['passowrd'];
+				$password= $_POST['password'];
 
 				$query= "SELECT * FROM user WHERE username='$username' AND password='$password'";
 
@@ -42,9 +42,9 @@
 				if(mysqli_num_rows($query_run)>0)
 				{
 					// Valid
-					echo '<script type="text/javascript"> alert("User found") </script>';
 					$_SESSION['username']= $username;
 					header('location:homepage.php');
+					// echo '<script type="text/javascript"> alert("VALID credentials") </script>';
 
 				}
 				else
