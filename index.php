@@ -1,7 +1,7 @@
 <?php
+	session_start();
 	require "dbconfig/config.php";
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -28,32 +28,33 @@
 				<input name="login" type="submit" id="login_btn" value="Login"/><br>
 				<a href= "register.php"><input type="button" id="register_btn" value="Register"/></a>
 			</form>
-
 			<?php
-			if(isset($_POST['login']))
-			{
-				$username= $_POST['username'];
-				$password= $_POST['password'];
-
-				$query= "SELECT * FROM user WHERE username='$username' AND password='$password'";
-
-				$query_run = mysqli_query($con, $query);
-
-				if(mysqli_num_rows($query_run)>0)
+				if(isset($_POST['login']))
 				{
-					// Valid
-					$_SESSION['username']= $username;
-					header('location:homepage.php');
-					// echo '<script type="text/javascript"> alert("VALID credentials") </script>';
+					@$username= $_POST['username'];
+					@$password= $_POST['password'];
+					$query = "select * from user where username='$username' and password='$password' ";
+					//echo $query;
+					$query_run = mysqli_query($con,$query);
+					//echo mysqli_num_rows($query_run);
+					if($query_run)
+					{
+						if(mysqli_num_rows($query_run)>0)
+						{
+							// Valid
+							$_SESSION['username']= $username;
+							$_SESSION['password']= $password;
 
+							header("Location:homepage.php");
+							//echo '<script type="text/javascript"> alert("VALID credentials") </script>';
+						}
+						else
+						{
+							// Invalid
+							echo '<script type="text/javascript"> alert("Invalid credentials") </script>';
+						}
+					}
 				}
-				else
-				{
-					// Invalid
-					echo '<script type="text/javascript"> alert("Invalid credentials") </script>';
-				}
-
-			}
 
 			?>
 
