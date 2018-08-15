@@ -9,70 +9,94 @@ require "dbconfig/config.php";
 
 	<title>Registration Page</title>
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/register.css">
 
 </head>
 
+
+
 <body style="background-color:#ecf0f1">
-	<div id="main-wrapper">
-		<center>
-			<h2>Registration Form</h2>	
-			<img src="images/avatar.png" class="avatar"/>
-		</center>
+	<div class="limiter">
+		<div class="container-register100">
+			<div class="wrap-register100">
+				<div class="register100-form-title" style="background-image: url(images/bg-01.jpg);">
+					<span class="register100-form-title-1">
+						Registeration form
+					</span>
+				</div>
 
-		<form class="myform" action="register.php" method="post">
-			<label>Username: </label><br>
-			<input name="username" type="text" class="inputvalues" placeholder="Type your username" required/><br>
-			<label>Password: </label><br>
-			<input name="password" type="password" class="inputvalues" placeholder="Type your password" required/><br>
-			<label>Confirm Password: </label><br>
-			<input name="cpassword"type="password" class="inputvalues" placeholder="Confirm password" required /><br>
-			<input name="submit_btn" type="submit" id="signup_btn" value="Sign Up"/><br>
-			<a href= "index.php"><input type="button" id="back_btn" value="Back"/></a>
-		</form>
+				<form class="register100-form validate-form" action="register.php" method="post">
+					<div class="wrap-register100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-register100">Username</span>
+						<input class="register100" type="text" name="username" placeholder="Enter username">
+						<span class="focus-register100"></span>
+					</div>
 
-		<?php
-		if(isset($_POST['submit_btn']))
-		{
+					<div class="wrap-register100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-register100">Password</span>
+						<input class="register100" type="password" name="password" placeholder="Enter password">
+						<span class="focus-register100"></span>
+					</div>
+
+					<div class="wrap-register100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-register100">Confirm Password</span>
+						<input class="register100" type="password" name="cpassword" placeholder="Confirm password">
+						<span class="focus-register100"></span>
+					</div>
+
+					<div class="container-register100-form-btn">
+						<button class="register100-form-btn" name="submit_btn" type="submit" value="Sign Up">
+							Sign Up
+						</button><br>
+						<a href= "index.php"><input type="button" class="back_btn" value="Back"/></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<?php
+	if(isset($_POST['submit_btn']))
+	{
 					//echo '<script type="text/javascript"> alert("Sign up button clicked") </script>';
 
-			$username = $_POST['username'];
-			$password = $_POST['password'];
-			$cpassword = $_POST['cpassword'];
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		$cpassword = $_POST['cpassword'];
 
-			if($password==$cpassword)
+		if($password==$cpassword)
+		{
+			$query= "select * from user WHERE username='$username'";
+			$query_run = mysqli_query($con,$query);
+
+			if(mysqli_num_rows($query_run)>0)
 			{
-				$query= "select * from user WHERE username='$username'";
-				$query_run = mysqli_query($con,$query);
-
-				if(mysqli_num_rows($query_run)>0)
-				{
 							// There is already a user with the same username
-					echo '<script type="text/javascript"> alert("Username already exists, try another username") </script>';
-				}
-				else
-				{
-					$query= "insert into user values('$username','$password')";
-					$query_run= mysqli_query($con,$query);
-					if($query_run)
-					{
-						echo '<script type="text/javascript"> alert("User registered. Go to login page") </script>';
-					}
-					else
-					{
-						echo '<script type="text/javascript"> alert("Error!") </script>';
-					}
-				}
+				echo '<script type="text/javascript"> alert("Username already exists, try another username") </script>';
 			}
 			else
 			{
-				echo '<script type="text/javascript"> alert("Both the passwords are different") </script>';
+				$query= "insert into user values('$username','$password')";
+				$query_run= mysqli_query($con,$query);
+				if($query_run)
+				{
+					echo '<script type="text/javascript"> alert("User registered. Go to login page") </script>';
+				}
+				else
+				{
+					echo '<script type="text/javascript"> alert("Error!") </script>';
+				}
 			}
 		}
+		else
+		{
+			echo '<script type="text/javascript"> alert("Both the passwords are different") </script>';
+		}
+	}
 
-		?>
+	?>
 
-	</div>
+</div>
 </body>
 
 </html>
