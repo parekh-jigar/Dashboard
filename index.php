@@ -36,22 +36,40 @@ if(isset($_POST['login']))
 </head>
 
 <body style="background-color:#ecf0f1">
-	<div id="main-wrapper">
-		<center>
-			<h2>Login Form</h2>	
-			<img src="images/avatar.png" class="avatar"/>
-		</center>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+				</div>
 
-		<form class="myform" action="" method="post">
-			<label>Username: </label><br>
-			<input name="username" type="text" class="inputvalues" placeholder="Type your username" required/><br>
-			<label>Password: </label><br>
-			<input name="password" type="password" class="inputvalues" placeholder="Type your password" required/><br>
-			<input name="login" type="submit" id="login_btn" value="Login"/><br>
-			<a href= "register.php"><input type="button" id="register_btn" value="Register"/></a>
-		</form>
+				<form class="login100-form validate-form" action="" method="post">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<span class="focus-input100"></span>
+					</div>
 
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="password" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" name="login" type="submit" value="Login">
+							Login
+						</button><br>
+						<a href= "register.php"><input type="button" class="register100-form-btn" value="Register"/></a>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
+
+</div>
 </body>
 
 </html>
