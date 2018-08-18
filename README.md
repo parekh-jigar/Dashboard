@@ -1,6 +1,4 @@
-<h1>Dashboard</h1>
-
-<h2>Login and Register form with database</h2>
+<h1>Dashboard- Login and Register form with database</h1>
 
 <h2>Installation guide for MacOS</h2>
 
