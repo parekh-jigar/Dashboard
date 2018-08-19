@@ -1,5 +1,13 @@
 <?php
 session_start();
+require_once('dbconfig/config.php');
+
+if(isset($_POST['logout']))
+		{
+			session_destroy();
+			header('Location: index.php');
+		}
+
 ?>
 
 <!DOCTYPE html>
@@ -23,9 +31,9 @@ session_start();
 			<img src="images/avatar.png" class="avatar"/>
 		</center>
 
-		<form class="myform" action="index.php" method="post">
+		<form class="myform" action="" method="post">
 			
-			<input type="button" id="logout_btn" value="Log out"/>
+			<input name="logout" type="submit" id="logout_btn" value="Log out"/>
 			
 		</form>
 
