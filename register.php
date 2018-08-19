@@ -25,20 +25,20 @@ require "dbconfig/config.php";
 					</span>
 				</div>
 
-				<form class="register100-form validate-form" action="register.php" method="post">
-					<div class="wrap-register100 validate-input m-b-26" data-validate="Username is required">
+				<form class="register100-form" action="register.php" method="post">
+					<div class="wrap-register100" data-validate="Username is required">
 						<span class="label-register100">Username</span>
 						<input class="register100" type="text" name="username" placeholder="Enter username">
 						<span class="focus-register100"></span>
 					</div>
 
-					<div class="wrap-register100 validate-input m-b-18" data-validate = "Password is required">
+					<div class="wrap-register100" data-validate = "Password is required">
 						<span class="label-register100">Password</span>
 						<input class="register100" type="password" name="password" placeholder="Enter password">
 						<span class="focus-register100"></span>
 					</div>
 
-					<div class="wrap-register100 validate-input m-b-18" data-validate = "Password is required">
+					<div class="wrap-register100" data-validate = "Password is required">
 						<span class="label-register100">Confirm Password</span>
 						<input class="register100" type="password" name="cpassword" placeholder="Confirm password">
 						<span class="focus-register100"></span>
