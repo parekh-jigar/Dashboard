@@ -45,14 +45,14 @@ if(isset($_POST['login']))
 					</span>
 				</div>
 
-				<form class="login100-form validate-form" action="" method="post">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+				<form class="login100-form" action="" method="post">
+					<div class="wrap-input100" data-validate="Username is required">
 						<span class="label-input100">Username</span>
 						<input class="input100" type="text" name="username" placeholder="Enter username">
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+					<div class="wrap-input100" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
 						<input class="input100" type="password" name="password" placeholder="Enter password">
 						<span class="focus-input100"></span>
@@ -62,7 +62,7 @@ if(isset($_POST['login']))
 						<button class="login100-form-btn" name="login" type="submit" value="Login">
 							Login
 						</button><br>
-						<a href= "register.php"><input type="button" class="register100-form-btn" value="Register"/></a>
+						<a href= "register.php"><input type="button" class="register100-form-btn-index" value="Register"/></a>
 					</div>
 				</form>
 			</div>
