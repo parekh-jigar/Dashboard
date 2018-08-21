@@ -1,3 +1,8 @@
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .container-homepage100 {
   width: 100%;  
   min-height: 100vh;
@@ -11,4 +16,12 @@
   align-items: center;
   padding: 15px;
   background: #ebeeef;
+}
+
+.wrap-homepage100 {
+  width: 670px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
