@@ -34,9 +34,9 @@ if(isset($_POST['logout']))
 				</center>
 
 				<form class="myform" action="" method="post">
-
-					<input name="logout" type="submit" id="logout_btn" value="Log out"/>
-
+					<div class="container-homepage100-form-btn">
+						<button class="homepage100-logout-btn" name="logout" type="submit" id="logout_btn" value="Log out"/>
+					</div>
 				</form>
 
 			</div>
