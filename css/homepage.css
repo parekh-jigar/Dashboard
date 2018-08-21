@@ -25,3 +25,37 @@
   overflow: hidden;
   position: relative;
 }
+
+/*------------------------------------------------------------------
+[ Button of logout ]*/
+.container-homepage100-form-btn {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.homepage100-logout-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  background-color: #57b846;
+  border-radius: 25px;
+  font-size: 16px;
+  color: white;
+  line-height: 1.2;
+  margin-right: 50px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.homepage100-logout-btn:hover {
+  background-color: #333333;
+}
