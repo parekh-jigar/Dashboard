@@ -6,10 +6,6 @@
 .container-homepage100 {
   width: 100%;  
   min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -48,6 +44,7 @@
   font-size: 16px;
   color: white;
   line-height: 1.2;
+  margin-left: 500px;
   margin-right: 50px;
 
   -webkit-transition: all 0.4s;

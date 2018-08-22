@@ -30,12 +30,14 @@ if(isset($_POST['logout']))
 					<h3>Welcome 
 						<?php echo $_SESSION['username'] ?>
 					</h3>	
-					<img src="images/avatar.png" class="avatar"/>
+					
 				</center>
 
 				<form class="myform" action="" method="post">
 					<div class="container-homepage100-form-btn">
-						<button class="homepage100-logout-btn" name="logout" type="submit" id="logout_btn" value="Log out"/>
+						<button class="homepage100-logout-btn" name="logout" type="submit" id="logout_btn" value="Log out">
+							Logout
+						</button>
 					</div>
 				</form>
 
