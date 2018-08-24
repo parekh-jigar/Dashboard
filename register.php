@@ -38,7 +38,7 @@ require "dbconfig/config.php";
 						<span class="focus-register100"></span>
 					</div>
 
-					<div class="wrap-register100" data-validate = "Password is required">
+					<div class="wrap-register100 " data-validate = "Password is required">
 						<span class="label-register100">Confirm Password</span>
 						<input class="register100" type="password" name="cpassword" placeholder="Confirm password">
 						<span class="focus-register100"></span>
