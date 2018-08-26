@@ -26,7 +26,7 @@ if(isset($_POST['logout']))
 		<div class="container-homepage100">
 			<div class="wrap-homepage100">
 				<center>
-					<h2>Login Form</h2>
+					<h2>Dashboard</h2>
 					<h3>Welcome 
 						<?php echo $_SESSION['username'] ?>
 					</h3>	
