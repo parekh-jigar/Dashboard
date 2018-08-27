@@ -15,7 +15,7 @@ require "dbconfig/config.php";
 
 
 
-<body style="background-color:#ecf0f1">
+<body background="bgimage.jpg">
 	<div class="limiter">
 		<div class="container-register100">
 			<div class="wrap-register100">
