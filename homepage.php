@@ -21,7 +21,7 @@ if(isset($_POST['logout']))
 
 </head>
 
-<body style="background-color:#95a5a6">
+<body background="bgimage.jpg">
 	<div class="limiter">
 		<div class="container-homepage100">
 			<div class="wrap-homepage100">
