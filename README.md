@@ -34,7 +34,7 @@ Step 2: Initializing index.php file by adding the following code into it> Ctrl O
 
 Step 3: Go to browser and check localhost, it will display php info.
 
-<h3>MySQL</h3>
+<h3>Downloading and Installing MySQL</h3>
 
 Step 1: Go to link> http://dev.mysql.com/downloads/mysql/
 
