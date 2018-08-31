@@ -67,3 +67,7 @@ Step 7: In Authentication Type the Password and save
 Step 8: Click on Download and Drag config into phpMyAdmin folder
 
 Step 9: Change localhost to 127.0.0.1 in config.inc.php - the file you moved to phpMyAdmin.
+
+<h3>Project directory</h3>
+
+Goto Library>WebServer>Documents and create the project folder.
