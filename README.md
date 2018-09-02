@@ -70,4 +70,4 @@ Step 9: Change localhost to 127.0.0.1 in config.inc.php - the file you moved to 
 
 <h3>Project directory</h3>
 
-Goto Library>WebServer>Documents and create the project folder.
+Goto Library>WebServer>Documents and create the project folder to run the project on the localhost.
