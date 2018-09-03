@@ -25,7 +25,7 @@ if(isset($_POST['logout']))
 
 </head>
 
-<body background="bgimage.jpg">
+<body background-image: url(images/bgimage.jpg);>
 	<div class="limiter">
 		<div class="container-homepage100">
 			<div class="wrap-homepage100">
