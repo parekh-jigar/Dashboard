@@ -1,7 +1,7 @@
 .limiter {
   width: 100%;
   margin: 0 auto;
-
+  background-image: url(images/bg-01.jpg);
 }
 
 .container-homepage100 {
@@ -12,7 +12,7 @@
   justify-content: center;
 
   padding: 15px;
-  background: #ebeeef;
+
 }
 
 
